@@ -11,7 +11,7 @@
 		    "required": true,
 		    "type": "boolean",
 		    "description": "set this to 'true' to force webview to playivideo inline rather than launch a widget"
-		}
+		},
                 "require_user_action": {
 		    "required": true,
 		    "type": "boolean",

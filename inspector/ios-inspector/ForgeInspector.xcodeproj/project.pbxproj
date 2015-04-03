@@ -24,7 +24,6 @@
 		712CBAF419C2212900FAD744 /* Default-667h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 712CBAF219C2212900FAD744 /* Default-667h@2x~iphone.png */; };
 		712CBAF519C2212900FAD744 /* Default-736h@3x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 712CBAF319C2212900FAD744 /* Default-736h@3x~iphone.png */; };
 		71F71CE919A622FE00B3D370 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F71CE819A622FE00B3D370 /* WebKit.framework */; };
-		9193654F1ACBC5C700F49357 /* config_schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 9193654E1ACBC5C700F49357 /* config_schema.json */; };
 		B307826415C2A393006798D7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B307826315C2A393006798D7 /* AssetsLibrary.framework */; };
 		B307826C15C2A44F006798D7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B307826B15C2A44F006798D7 /* SystemConfiguration.framework */; };
 		B307826E15C2A47B006798D7 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = B307826D15C2A47B006798D7 /* assets */; };
@@ -90,7 +89,6 @@
 		712CBAF219C2212900FAD744 /* Default-667h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x~iphone.png"; sourceTree = "<group>"; };
 		712CBAF319C2212900FAD744 /* Default-736h@3x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x~iphone.png"; sourceTree = "<group>"; };
 		71F71CE819A622FE00B3D370 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		9193654E1ACBC5C700F49357 /* config_schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config_schema.json; path = ../../module/config_schema.json; sourceTree = "<group>"; };
 		B307826315C2A393006798D7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B307826B15C2A44F006798D7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B307826D15C2A47B006798D7 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 		B3FC516C15C14B2A003574D9 = {
 			isa = PBXGroup;
 			children = (
-				9193654E1ACBC5C700F49357 /* config_schema.json */,
 				B3E5837A162714AD00BD59DD /* ForgeModule.xcodeproj */,
 				B3FC518115C14B2A003574D9 /* ForgeInspector */,
 				B3FC517A15C14B2A003574D9 /* Frameworks */,
@@ -291,7 +288,7 @@
 		B3E58386162714AD00BD59DD /* templatemodule.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = browsersettings.bundle;
+			path = templatemodule.bundle;
 			remoteRef = B3E58385162714AD00BD59DD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -303,7 +300,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FC519515C14B3C003574D9 /* ForgeCore.bundle in Resources */,
-				9193654F1ACBC5C700F49357 /* config_schema.json in Resources */,
 				B307826E15C2A47B006798D7 /* assets in Resources */,
 				B36DDE4A17D4D8DF00C56210 /* 152.png in Resources */,
 				B33F897B171479080050FB45 /* Default-568h@2x~iphone.png in Resources */,
