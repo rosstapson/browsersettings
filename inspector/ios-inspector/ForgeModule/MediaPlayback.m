@@ -9,5 +9,10 @@
 #import "MediaPlayback.h"
 
 @implementation MediaPlayback
-
++ (void) setInlinePlayback:(BOOL)inlinePlayback {
+    return;
+}
++ (void) setUserActionRequired:(BOOL)required {
+    return;
+}
 @end

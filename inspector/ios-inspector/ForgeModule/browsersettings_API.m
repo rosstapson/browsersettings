@@ -1,4 +1,5 @@
 #import "browsersettings_API.h"
+#import "MediaPlayback.h"
 
 @implementation browsersettings_API
 
@@ -22,5 +23,15 @@
 	[alert show];
 	[task success:nil];
 }
+
+// method to set whether video is viewed inline - need not be callable from javascript
+
++ (void) setMediaPlayableInline {
+    [MediaPlayback setInlinePlayback:true];
+}
++ (void) setUserActionRequired {
+    [MediaPlayback setUserActionRequired:true];
+}
+
 
 @end

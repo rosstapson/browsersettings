@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface MediaPlayback : NSObject
-
++ (void) setInlinePlayback:(BOOL)inlinePlayback;
++ (void) setUserActionRequired:(BOOL)actionRequired;
 @end
