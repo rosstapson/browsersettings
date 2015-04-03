@@ -1,0 +1,16 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "media_playback": {
+            "required": false,
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "inline_video": false,
+                "require_user_action": false
+		
+            }
+        }
+    }
+}
