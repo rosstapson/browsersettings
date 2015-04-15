@@ -2,8 +2,8 @@
 	"this_module": {
 		"config": {
 			"media_playback": {
-				"inline_video": true,
-				"require_user_action": false
+				"inline_video": false,
+				"require_user_action": true
 			}
 		}
 	},
