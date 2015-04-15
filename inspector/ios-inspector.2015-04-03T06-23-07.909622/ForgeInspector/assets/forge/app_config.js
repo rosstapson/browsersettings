@@ -1,1 +1,0 @@
-window.forge = {}; window.forge.config = {"modules": {"browsersettings": {"version": "0.1", "config": {}}, "inspector": {"version": "1.0"}}}; window.forge.module_mapping = {"browsersettings": "browsersettings", "inspector": "inspector"};

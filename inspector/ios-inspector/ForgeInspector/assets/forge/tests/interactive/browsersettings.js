@@ -1,9 +1,5 @@
 module("browsersettings");
-/*
-var qunitFixture = document.createElement("div");
-qunitFixture.id = "qunit-fixture";
-document.body.appendChild(qunitFixture);
- */
+
 if (forge.is.ios()) {
     asyncTest("Play media inline", 1, function() {
               
@@ -15,7 +11,6 @@ if (forge.is.ios()) {
                             videoElement.setAttribute("width", "100%");
                             videoElement.src = forge.inspector.getFixture("browsersettings", "small.mp4").uri;
                             document.getElementById("qunit").appendChild(videoElement);
-                            //qunitFixture.appendChild(videoElement);
                             askQuestion("Did the video play inline?", {
                                       Yes: function() {
                                       ok(true, "success");
@@ -32,7 +27,6 @@ if (forge.is.ios()) {
                             videoElement.setAttribute("controls", "controls");
                             videoElement.src = forge.inspector.getFixture("browsersettings", "small.mp4").uri;
                             document.getElementById("qunit").appendChild(videoElement);
-                            //qunitFixture.appendChild(videoElement);
                             askQuestion("Did the video play fullscreen?", {
                                         Yes: function() {
                                         ok(true, "success");
@@ -56,7 +50,6 @@ asyncTest("Media player requires user action", 1, function() {
                             videoElement.setAttribute("webkit-playsinline", true);
                             videoElement.setAttribute("width", "100%");
                             videoElement.src = forge.inspector.getFixture("browsersettings", "small.mp4").uri;
-                          
                             document.getElementById("qunit").appendChild(videoElement);
                             askQuestion("Did the video require a user action to play?", {
                                       Yes: function() {
@@ -72,12 +65,11 @@ asyncTest("Media player requires user action", 1, function() {
               No: function() {
                             var videoElement = document.createElement("video");
                             videoElement.src = forge.inspector.getFixture("browsersettings", "small.mp4").uri;
-                          videoElement.setAttribute("type", "video/mp4");
+                            videoElement.setAttribute("type", "video/mp4");
                             videoElement.setAttribute("controls", "controls");
                             videoElement.setAttribute("webkit-playsinline", true);
                             videoElement.setAttribute("autoplay", "autoplay");
                             videoElement.setAttribute("width", "100%");
-                            //qunitFixture.appendChild(videoElement);
                             document.getElementById("qunit").appendChild(videoElement);
                             askQuestion("Did the video play automatically?", {
                                       Yes: function() {
