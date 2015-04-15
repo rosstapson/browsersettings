@@ -98,10 +98,17 @@
 			</select>
 		</div>
 		<div class="span9">
-			<h1 id="docs">Docs</h1>
-<p>This is where you should document your module.</p>
-<p>You can create other .md files in this folder, or even more folders containing index.md and other .md files.</p>
-<p>You can also include <code>.jpg</code>, <code>.gif</code>, and <code>.png</code> files if you would like to use images.</p>
+			<h2 id="platform-agnostic-browser-config">Platform-agnostic browser config</h2>
+<h3 id="media-playback">Media Playback</h3>
+<p>iOS Safari disables autoplayback, and launches a full-screen widget when playing video. </p>
+<ul>
+<li>
+<p>inline video - set this to TRUE to disable fullscreen playback. <em>The &lt;video&gt; element in the HTML document must also include the 'webkit-playsinline' attribute.</em></p>
+</li>
+<li>
+<p>require user action - set this to FALSE to allow auto play. <em>Ensure the &lt;audio&gt; or &lt;video&gt; element you want to play has the 'autoplay' attribute set.</em> </p>
+</li>
+</ul>
 		</div>
 	</div>
 </div>

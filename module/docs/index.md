@@ -1,8 +1,8 @@
-Docs
-====
+##Platform-agnostic browser config
+###Media Playback
 
-This is where you should document your module.
+iOS Safari disables autoplayback, and launches a full-screen widget when playing video. 
 
-You can create other .md files in this folder, or even more folders containing index.md and other .md files.
+- inline video - set this to TRUE to disable fullscreen playback. *The <video> element in the HTML document must also include the 'webkit-playsinline' attribute.*
 
-You can also include `.jpg`, `.gif`, and `.png` files if you would like to use images.
+- require user action - set this to FALSE to allow auto play. *Ensure the <audio> or <video> element you want to play has the 'autoplay' attribute set.* 

@@ -1,5 +1,5 @@
 {
-	"description": "This module is used to configure browser settings in a platform agnostic way. ",
+	"description": "Set browser config in a platform-neutral fashion.",
 	"min_platform_version": "v2.2.10",
 	"namespace": "browsersettings",
 	"platform_version": "v2.2.10",
