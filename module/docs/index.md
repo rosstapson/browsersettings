@@ -1,8 +1,13 @@
-##Platform-agnostic browser config
-###Media Playback
+``browsersettings``: Platform-agnostic browser config
+=====================================================
 
 iOS Safari disables autoplayback, and launches a full-screen widget when playing video. 
 
-- inline video - set this to TRUE to disable fullscreen playback. *The <video> element in the HTML document must also include the 'webkit-playsinline' attribute.*
+###Media Playback
 
-- require user action - set this to FALSE to allow auto play. *Ensure the <audio> or <video> element you want to play has the 'autoplay' attribute set.* 
+iPhone
+:	inline video - set this to `true` to disable fullscreen playback. The `<video>` element in the HTML document must also include the 'webkit-playsinline' attribute.
+
+
+iPhone, Android
+:	require user action - set this to `false` to allow auto play. Ensure the `<audio>` or `<video>` element you want to play has the 'autoplay' attribute set.
