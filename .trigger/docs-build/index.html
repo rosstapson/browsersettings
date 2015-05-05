@@ -98,17 +98,15 @@
 			</select>
 		</div>
 		<div class="span9">
-			<h2 id="platform-agnostic-browser-config">Platform-agnostic browser config</h2>
-<h3 id="media-playback">Media Playback</h3>
+			<h1 id="browsersettings-platform-agnostic-browser-config"><code>browsersettings</code>: Platform-agnostic browser config</h1>
 <p>iOS Safari disables autoplayback, and launches a full-screen widget when playing video. </p>
-<ul>
-<li>
-<p>inline video - set this to TRUE to disable fullscreen playback. <em>The &lt;video&gt; element in the HTML document must also include the 'webkit-playsinline' attribute.</em></p>
-</li>
-<li>
-<p>require user action - set this to FALSE to allow auto play. <em>Ensure the &lt;audio&gt; or &lt;video&gt; element you want to play has the 'autoplay' attribute set.</em> </p>
-</li>
-</ul>
+<h3 id="media-playback">Media Playback</h3>
+<dl class="dl-wide">
+<dt>iPhone</dt>
+<dd>inline video - set this to <code>true</code> to disable fullscreen playback. The <code>&lt;video&gt;</code> element in the HTML document must also include the 'webkit-playsinline' attribute.</dd>
+<dt>iPhone, Android</dt>
+<dd>require user action - set this to <code>false</code> to allow auto play. Ensure the <code>&lt;audio&gt;</code> or <code>&lt;video&gt;</code> element you want to play has the 'autoplay' attribute set.</dd>
+</dl>
 		</div>
 	</div>
 </div>

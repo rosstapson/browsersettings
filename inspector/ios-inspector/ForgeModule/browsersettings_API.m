@@ -1,5 +1,5 @@
 #import "browsersettings_API.h"
-#import "MediaPlayback.h"
+#import "Util.h"
 
 @implementation browsersettings_API
 
@@ -8,16 +8,4 @@
 // an example method is included below to get you started.
 //
 
-// This will be callable from JavaScript as 'browsersettings.showAlert'
-// it will require a parameter called text
-+ (void)showAlert:(ForgeTask*)task text:(NSString *)text {
-	
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert"
-													message:text
-												   delegate:nil
-										  cancelButtonTitle:@"OK"
-										  otherButtonTitles:nil];
-	[alert show];
-	[task success:nil];
-}
 @end

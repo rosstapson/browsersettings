@@ -1,7 +1,7 @@
 {
-	"description": "Set browser config in a platform-neutral fashion.",
-	"min_platform_version": "v2.2.10",
-	"namespace": "browsersettings",
-	"platform_version": "v2.2.10",
-	"version": "0.1.4"
+    "description": "Set browser config in a platform-neutral fashion.", 
+    "min_platform_version": "v2.2.10", 
+    "namespace": "browsersettings", 
+    "platform_version": "v2.2.10", 
+    "version": "0.1.4"
 }
