@@ -5,9 +5,9 @@ iOS Safari disables autoplayback, and launches a full-screen widget when playing
 
 ###Media Playback
 
-iPhone
-:	inline video - set this to `true` to disable fullscreen playback. The `<video>` element in the HTML document must also include the 'webkit-playsinline' attribute.
+inline video
+:	iPhone - set this to `true` to enable inline video playback. The `<video>` element in the HTML document must also include the `webkit-playsinline` attribute.
 
 
-iPhone, Android
-:	require user action - set this to `false` to allow auto play. Ensure the `<audio>` or `<video>` element you want to play has the 'autoplay' attribute set.
+require user action
+:	require user action - set this to `true` to require the user to press 'play'. If set to `false`, ensure the `<audio>` or `<video>` element you want to play has the `autoplay` attribute set.
