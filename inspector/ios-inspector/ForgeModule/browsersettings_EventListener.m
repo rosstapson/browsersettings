@@ -19,6 +19,9 @@
                                 objectForKey:@"media_playback"]
                                objectForKey:@"require_user_action"];
     [Util setUserActionRequired:[userActionRequired boolValue]];
+    
+    NSString* acceptCookies = [[[ForgeApp sharedApp] configForModule:@"browsersettings"]objectForKey:@"accept_cookies"];
+    [Util setAcceptCookies:[acceptCookies boolValue]];
 }
 
 

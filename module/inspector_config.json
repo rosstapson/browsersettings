@@ -4,7 +4,8 @@
 			"media_playback": {
 				"inline_video": true,
 				"require_user_action": true
-			}
+			},
+			"accept_cookies": true
 		}
 	},
 	"modules": {}

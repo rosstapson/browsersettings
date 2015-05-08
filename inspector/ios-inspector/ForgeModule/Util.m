@@ -31,8 +31,14 @@
         UIWebView *webView = (UIWebView*)[[ForgeApp sharedApp] webView];
         webView.mediaPlaybackRequiresUserAction = userActionRequired;
     }
-    
-
     return;
+}
++ (void) setAcceptCookies:(BOOL)acceptCookies {
+    if (acceptCookies) {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
+    }
+    else {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyNever];
+    }
 }
 @end

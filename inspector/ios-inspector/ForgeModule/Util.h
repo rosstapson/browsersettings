@@ -11,4 +11,5 @@
 @interface Util : NSObject
 + (void) setInlinePlayback:(BOOL)inlinePlayback;
 + (void) setUserActionRequired:(BOOL)userActionRequired;
++ (void) setAcceptCookies:(BOOL)acceptCookies;
 @end
