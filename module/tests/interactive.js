@@ -84,3 +84,31 @@ asyncTest("Media player requires user action", 1, function() {
               }
         });
 });
+
+asyncTest("Test accept cookies", 1, function() {
+  $("video" ).remove();
+  var iframeElement = document.createElement("iframe");
+  iframeElement.setAttribute("id", "iframe");
+  document.getElementById("qunit").appendChild(iframeElement); 
+  $.ajax({
+    url: "http://httpbin.org/cookies/set?mainpage_cookie=set_successfully",
+    success: function () {
+      forge.logging.log("Ajax - set cookie");
+    },
+    error: function(xhr) {
+      forge.logging.log("Ajax error occured: " + xhr.status + " " + xhr.statusText);
+    }
+  });
+  $("#iframe").attr("src", "http://httpbin.org/cookies/set?iframe_cookie=set_successfully");
+  askQuestion("Did the ajax_cookie and the iframe_cookie set successfully?", {
+    Yes: function() {
+      ok(true, "success");
+      start();
+    }, 
+    No: function() {
+      ok(false, "failure");
+    }
+  });
+});
+
+

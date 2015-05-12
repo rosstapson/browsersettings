@@ -10,12 +10,14 @@ import android.os.Bundle;
 public class EventListener extends ForgeEventListener {
 	
 	public void onCreate(Bundle savedInstanceState) {
-		JsonObject configObject = (JsonObject)ForgeApp.configForModule("browsersettings").get("media_playback");
-		boolean inlineVideo = configObject.get("inline_video").getAsBoolean();
-		boolean userActionRequired = configObject.get("require_user_action").getAsBoolean();
+		JsonObject mediaObject = (JsonObject)ForgeApp.configForModule("browsersettings").get("media_playback");
+		boolean inlineVideo = mediaObject.get("inline_video").getAsBoolean();
+		boolean userActionRequired = mediaObject.get("require_user_action").getAsBoolean();
+		boolean acceptCookies = ForgeApp.configForModule("browsersettings").get("accept_cookies").getAsBoolean();
 		
 		Util.setInlineMedia(inlineVideo);
 		Util.setUserActionRequired(userActionRequired);
+		Util.setAcceptCookies(acceptCookies);
 	}
 	
 }

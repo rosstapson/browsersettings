@@ -22,8 +22,7 @@
         "accept_cookies": {
             "required": true,
             "type": "boolean",
-            "description": "set this to 'true' to set the user's webview cookies policy to accept"
-            
+            "description": "set this to 'true' to set the user's webview policy to accept cookies"            
         }
     }
 }
