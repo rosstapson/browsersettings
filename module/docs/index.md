@@ -1,7 +1,8 @@
 ``browsersettings``: Platform-agnostic browser config
 =====================================================
 
-iOS Safari disables autoplayback, and launches a full-screen widget when playing video. 
+accept cookies
+:	set to true to set the application's cookie policy to accept cookies.
 
 ###Media Playback
 

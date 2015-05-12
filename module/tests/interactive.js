@@ -85,7 +85,7 @@ asyncTest("Media player requires user action", 1, function() {
         });
 });
 
-asyncTest("Test accept cookies", 1, function() {
+asyncTest("Test accept server-side cookies", 1, function() {
   $("video" ).remove();
   var iframeElement = document.createElement("iframe");
   iframeElement.setAttribute("id", "iframe");
@@ -100,15 +100,42 @@ asyncTest("Test accept cookies", 1, function() {
     }
   });
   $("#iframe").attr("src", "http://httpbin.org/cookies/set?iframe_cookie=set_successfully");
-  askQuestion("Did the ajax_cookie and the iframe_cookie set successfully?", {
+  askQuestion("Did the mainpage_cookie and the iframe_cookie set successfully?", {
     Yes: function() {
       ok(true, "success");
       start();
     }, 
     No: function() {
       ok(false, "failure");
+      start();
     }
   });
 });
 
-
+asyncTest("Test accept browser cookies", 1, function() {
+  $("#iframe").remove();
+  var date = new Date();
+  date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
+  expires = "; expires=" + date.toUTCString();
+  document.cookie = "browser_cookie_successful=set" + expires + "; path=/";
+  //display cookie
+  var para = document.createElement("p");
+  var divElement = document.createElement("div");
+  var cookiePara = document.createElement("p");
+  para.appendChild(document.createTextNode("These cookies are set:"));
+  cookiePara.appendChild(document.createTextNode(document.cookie));
+  divElement.appendChild(para);
+  divElement.appendChild(cookiePara);
+  document.getElementById("qunit").appendChild(divElement);
+  askQuestion("Has the 'browser_cookie_successful' cookie been set?", {
+    Yes: function() {
+      document.cookie = "browser_cookie_successful=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+      ok(true, "success");
+      start();
+    },
+    No: function() {
+      ok(false, "failure");
+      start();
+    }
+  });
+});
