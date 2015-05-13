@@ -15,9 +15,10 @@ public class EventListener extends ForgeEventListener {
 		boolean userActionRequired = mediaObject.get("require_user_action").getAsBoolean();
 		boolean acceptCookies = ForgeApp.configForModule("browsersettings").get("accept_cookies").getAsBoolean();
 		
+		Util.setAcceptCookies(acceptCookies);
 		Util.setInlineMedia(inlineVideo);
 		Util.setUserActionRequired(userActionRequired);
-		Util.setAcceptCookies(acceptCookies);
+		
 	}
 	
 }
