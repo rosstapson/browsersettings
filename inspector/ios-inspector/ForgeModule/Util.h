@@ -10,6 +10,6 @@
 
 @interface Util : NSObject
 + (void) setInlinePlayback:(BOOL)inlinePlayback;
-+ (void) setUserActionRequired:(BOOL)userActionRequired;
++ (void) setAutoplayVideo:(BOOL)autoplayVideo;
 + (void) setAcceptCookies:(BOOL)acceptCookies;
 @end

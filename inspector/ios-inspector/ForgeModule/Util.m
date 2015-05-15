@@ -12,7 +12,7 @@
 @implementation Util
 + (void) setInlinePlayback:(BOOL)inlinePlayback {
     if (NSClassFromString(@"WKWebView") && [[ForgeApp sharedApp] useWKWebView]) {
-        WKWebView *webView = (WKWebView*)[[ForgeApp sharedApp] webView];
+        
         // TODO handle iOS 8
         [ForgeLog w:@"forge won't support WKWebView until various issues are addressed."];
     } else {
@@ -22,14 +22,14 @@
 
     return;
 }
-+ (void) setUserActionRequired:(BOOL)userActionRequired {
++ (void) setAutoplayVideo:(BOOL)autoplayVideo {
     if (NSClassFromString(@"WKWebView") && [[ForgeApp sharedApp] useWKWebView]) {
-        WKWebView *webView = (WKWebView*)[[ForgeApp sharedApp] webView];
+        
         // TODO handle iOS 8
         [ForgeLog w:@"forge won't support WKWebView until various issues are addressed."];
     } else {
         UIWebView *webView = (UIWebView*)[[ForgeApp sharedApp] webView];
-        webView.mediaPlaybackRequiresUserAction = userActionRequired;
+        webView.mediaPlaybackRequiresUserAction = !autoplayVideo;
     }
     return;
 }

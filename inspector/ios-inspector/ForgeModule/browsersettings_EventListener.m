@@ -8,17 +8,16 @@
 //
 
 + (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //[ForgeLog i:@"rosslog: didFinish etc etc"];
-  
+      
     NSString* inlineVideo = [[[[ForgeApp sharedApp] configForModule:@"browsersettings"]
                               objectForKey:@"media_playback"]
                              objectForKey:@"inline_video"];
     [Util setInlinePlayback:[inlineVideo boolValue]];
     
-    NSString* userActionRequired = [[[[ForgeApp sharedApp] configForModule:@"browsersettings"]
+    NSString* autoplayVideo = [[[[ForgeApp sharedApp] configForModule:@"browsersettings"]
                                 objectForKey:@"media_playback"]
-                               objectForKey:@"require_user_action"];
-    [Util setUserActionRequired:[userActionRequired boolValue]];
+                               objectForKey:@"autoplay_video"];
+    [Util setAutoplayVideo:[autoplayVideo boolValue]];
     
     NSString* acceptCookies = [[[ForgeApp sharedApp] configForModule:@"browsersettings"]objectForKey:@"accept_cookies"];
     [Util setAcceptCookies:[acceptCookies boolValue]];
