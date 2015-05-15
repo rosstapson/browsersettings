@@ -12,7 +12,7 @@
                     "type": "boolean",
                     "description": "set this to 'true' to force iOS webview to play video inline rather than launch a widget.  video element in the HTML document must also include the webkit-playsinline attribute."
                 },
-                "require_user_action": {
+                "autoplay_video": {
                     "required": true,
                     "type": "boolean",
                     "description": "set this to true to require user interaction before playing media"

@@ -3,7 +3,7 @@
 		"config": {
 			"media_playback": {
 				"inline_video": true,
-				"require_user_action": true
+				"autoplay_video": true
 			},
 			"accept_cookies": true
 		}

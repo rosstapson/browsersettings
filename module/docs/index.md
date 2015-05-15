@@ -7,7 +7,7 @@ accept cookies
 ###Media Playback
 
 inline video
-:	iPhone - set this to `true` to enable inline video playback. The `<video>` element in the HTML document must also include the `webkit-playsinline` attribute.
+:	set this to `true` to enable inline video playback. The `<video>` element in the HTML document must also include the 'webkit-playsinline' attribute (iOS only).
 
 
 require user action

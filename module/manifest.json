@@ -1,7 +1,8 @@
 {
-    "description": "Set browser config in a platform-neutral fashion.", 
-    "min_platform_version": "v2.2.10", 
-    "namespace": "browsersettings", 
-    "platform_version": "v2.2.10", 
-    "version": "0.1.4"
+	"description": "Set browser config in a platform-neutral fashion.",
+	"min_platform_version": "v2.2.11",
+	"namespace": "browsersettings",
+	"platform_version": "v2.2.11",
+	"version": "0.2.1",
+	"changes": "Changed user_action_required to autoplay_video\n"
 }
